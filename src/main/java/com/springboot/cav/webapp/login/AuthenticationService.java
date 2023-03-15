@@ -1,7 +1,7 @@
 package com.springboot.cav.webapp.login;
 
 import org.springframework.stereotype.Service;
-
+/*
 @Service
 public class AuthenticationService {
 
@@ -14,3 +14,4 @@ public class AuthenticationService {
     }
 
 }
+*/

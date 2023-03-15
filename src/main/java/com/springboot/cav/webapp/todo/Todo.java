@@ -2,10 +2,18 @@ package com.springboot.cav.webapp.todo;
 
 import java.time.LocalDate;
 
-public class Todo {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.Size;
 
+@Entity
+public class Todo {
+    @Id
+    @GeneratedValue
     private int id;
     private String username;
+    @Size(min=5, message="Enter at least 5 characters")
     private String description;
     private LocalDate targetDate;
     private boolean done;
